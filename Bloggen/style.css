@@ -1,0 +1,66 @@
+/* Har tagit hjälp av w3schools simpla blog layout då den passa in
+https://www.w3schools.com/howto/howto_css_blog_layout.asp
+*/
+
+/*generell css*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Länkars attributer förändras här */
+a {
+  float:right;
+  text-decoration: none;
+}
+
+/* Styling för innehållet i body */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Dem vänstra, columnerna inläggen delas in i */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Tilldelar columnerna färg och storlek, samt boundries */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Tar bort float efter collumnerna*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: gray;
+  margin-top: 20px;
+}
+
+/* responsive layout vid 800px */
+@media (max-width: 800px) {
+  .leftcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
